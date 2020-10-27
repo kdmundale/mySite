@@ -4,7 +4,7 @@ const ejs = require('ejs');
 // Initialise Express
 var app = express();
 // Render static files
-app.use('/public', express.static('public'));
+app.use(express.static(__dirname + "/public"));
 // Set the view engine to ejs
 app.set('view engine', 'ejs');
 // Port website will run on
