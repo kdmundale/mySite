@@ -452,6 +452,69 @@ td {
   box-shadow: 0px 0px 7px 3px  rgb(165, 156, 255);
 }
 
+#dadJokeBox {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -5px 10px 20px black;
+  margin:20px 0px 30px 0px;
+
+}
+
+#titleDad {
+  margin-top: 20px;
+  font-family: 'Krona One';
+  font-size: calc(20px + 5 * ((100vw - 300px)/1300));
+  display: inline-block;
+  color: white;
+  text-align: center;
+
+}
+
+#dadJoke {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+}
+
+#bigpush {
+  border-radius: 50%;
+  width: 50%;
+  padding-top:40px;
+  padding-bottom: 30px;
+  margin: 20px;
+  font-variant: small-caps;
+  font-family: 'Krona One';
+  font-size: calc(20px + 5 * ((100vw - 300px)/1300));
+  background-color: rgb(196 17 4);
+  background: linear-gradient(#c41104, #821109);
+  box-shadow: -5px 10px 20px black;
+  color: white;
+}
+
+#jokeDisplay {
+  display: none;
+  color: white;
+  font-size: calc(20px + 10 * ((100vw - 300px)/1300));
+  text-align: center;
+  margin: 20px;
+  padding: 30px;
+  background-color: rgb(8 3 54);
+  background: radial-gradient(circle at 90%, #232323, #14213d 40%, #0c284d 50%, #232323 95%);
+  box-shadow: -5px 10px 20px black;
+}
+
+footer {
+  padding: 20px;
+  margin: 60px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  color: #3e59f7;
+}
+
+
 footer {
   height: 300px;
 }
