@@ -413,7 +413,7 @@ h3 {
   color:rgb(125,240,251);
   font-size: calc(20px + 15 * ((100vw - 300px)/1300));
   text-align:right;
-  margin-right: 30px;
+  margin-right:20px;
   margin-top: 10px;
 }
 
