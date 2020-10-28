@@ -3,13 +3,7 @@
 
   <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <script defer type="text/javascript" src="/js/script.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap&family=Roboto&display=swap&family=Kanit&family=Krona+One&display=swap"
-    rel="stylesheet">
-    <link href="/css/styles.css" rel="stylesheet" type="text/css">
-    <title>KDMundale</title>
+    <%- include ("../partials/_head") %>
 
   </head>
 
@@ -18,22 +12,9 @@
     <div class="header-holder">
 
     <header>
-      <div class="title-bar">
-      <!--Drop down header button which activates JavaScript-->
-      <button onclick="dropDownOption();" type="button" class="dropbtn" name="button"></button>
 
-        <div id="dropMenu" class="title-bar-nav">
+      <%- include ("../partials/_header") %>
 
-          <a class="nav-bar" href="#skills">strengths</a>
-          <a class="nav-bar" href="#projects">coding projects</a>
-          <a class="nav-bar" href="#visual">visual projects</a>
-          <a class="nav-bar" href="#resume">experience</a>
-          <a class="nav-bar" href="#contact">contact</a>
-          <a class="nav-bar" href="#home">home</a>
-
-        </div>
-
-      </div>
     </header>
 
     </div>
@@ -119,60 +100,6 @@
           personal ethos is one of equality, inclusion, and openness.</p>
         </div>
 
-
-    </section>
-
-    <section id="projects" class="main_content">
-
-      <h2 class="skill_h2">projects</h2>
-
-      <div id="dadJokeBox">
-        <h1 id="titleDad">Dad Joke Machine</h1>
-
-        <section id="dadJoke">
-          <button id="bigpush" type="button" name="button" value="joke" onclick="getJoke();">PUSH ME</button>
-          <div id="jokeDisplay"></div>
-        </section>
-
-      </div>
-
-      <table>
-        <!--Table of previous projects with displayed skills used-->
-        <tbody>
-
-          <tr>
-            <td class="proj_pic_cont"><a target="blank" href="https://kdmundale.github.io/DowntownLancaster-DrivingGame/"><img src="/images/project-images/driver.jpg" alt="" class="proj"></a></td>
-            <td class="proj_name">WANT TO PLAY A GAME?<br>Downtown Lancaster:<br>JavaScript Driving Game</td>
-            <td class="proj_skill">JavaScript, HTML & CSS Mobile compatible</td>
-          </tr>
-
-          <tr>
-            <td class="proj_pic_cont"><a href="#"><img src="images/project-images/portal.jpg" alt="" class="proj"></a></td>
-            <td class="proj_name">TSCT Portal:<br>TSCT College Portal Simulation</td>
-            <td class="proj_skill">Python3, Flask, SQL, PgAdmin, Database Design, JavaScript, HTML, CSS</td>
-          </tr>
-
-          <tr>
-            <td class="proj_pic_cont"><a target="blank" href="https://stormy-cove-03010.herokuapp.com/"><img src="/images/project-images/todo.jpg" alt="" class="proj"></a></td>
-            <td class="proj_name">Flask ToDo App</td>
-            <td class="proj_skill">Python3, Flask, HTML, CSS, Heroku</td>
-          </tr>
-
-          <tr>
-            <td class="proj_pic_cont"><a href=" https://kdmundale.github.io/MollysPubWebsite/" target="blank"><img src="" class="proj" alt=""></a></td>
-            <td class="proj_name">Website Proposal:<br>Static Web Build for Business</td>
-            <td class="proj_skill">JavaScript, HTML, CSS</td>
-          </tr>
-
-          <tr>
-            <td class="proj_pic_cont"><a target="blank" href="https://github.com/kdmundale"><img  class="proj" src="/images/social-images/github.svg" alt="GitHub Icon"></a></td>
-            <td class="proj_name">GitHub</td>
-            <td class="proj_skill">Collection of all my school and personal projects, from my first "Hello, World" to now.</td>
-          </tr>
-
-        </tbody>
-
-      </table>
 
     </section>
 
@@ -264,7 +191,7 @@
 
   <footer>
 
-    <p class="footer_p">Copyright <time>July 2020</time> KDM</p>
+    <%- include ("../partials/_footer") %>
 
   </footer>
 

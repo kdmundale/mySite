@@ -1,17 +1,15 @@
 // Load Node modules
-var express = require('express');
+const express = require('express');
+const path = require('path');
+const routes = require('./routes');
 const ejs = require('ejs');
 // Initialise Express
-var app = express();
+const app = express();
 // Render static files
 app.use(express.static(__dirname + "/public"));
 // Set the view engine to ejs
 app.set('view engine', 'ejs');
+
+app.use("/", routes);
 // Port website will run on
 app.listen(8080);
-
-// *** GET Routes - display pages ***
-// Root Route
-app.get('/', function (req, res) {
-    res.render('pages/index');
-});

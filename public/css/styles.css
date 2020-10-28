@@ -19,6 +19,7 @@ body {
   background: radial-gradient(circle at 90%, #232323, #14213d 40%, #0c284d 50%, #232323 95%);
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 
@@ -225,7 +226,7 @@ Main Layout styles
 
 .skill_h2 {
   text-align: left;
-  font-size: calc(25px + 50 * ((100vw - 300px)/1300));
+  font-size: calc(35px + 50 * ((100vw - 300px)/1300));
   font-family: 'Montserrat', sans-serif;
   color: rgb(165, 156, 255);
   font-variant: small-caps;
@@ -261,7 +262,14 @@ Main Layout styles
 }
 
 .proj {
-  width: 100%;
+  width: 75%;
+}
+
+#projPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
 }
 
 table {
@@ -280,36 +288,6 @@ td {
   margin-bottom: 20px;
   font-family: 'Roboto', sans-serif;
   font-size: calc(16px + 15 * ((100vw - 300px)/1300));
-}
-
-.proj_pic_cont {
-  margin-right: 10px;
-  box-shadow: 0px 0px 10px 5px  rgb(125,240,251);
-  width: 25%;
-}
-
-.proj_pic_cont:hover {
-  background: linear-gradient(rgb(194,194,194),rgb(85,85,85));
-  box-shadow: 0px 0px 10px 5px  rgb(165, 156, 255);
-  padding: 10px;
-}
-
-.proj_name {
-  box-shadow: 4px 5px 3px 0px  rgb(15, 15, 15);
-  text-align: center;
-  border: none;
-  border-radius: 0;
-  padding: 5px 5px 5px 5px;
-  width: 45%;
-}
-
-.proj_skill {
-  font-size: calc(12px + 15 * ((100vw - 300px)/1300));
-  box-shadow: 4px 5px 3px 2px  rgb(15, 15, 15);
-  text-align: center;
-  border: none;
-  border-radius: 0;
-  padding: 10px 5px 5px 10px;
 }
 
 .visual_h3 {
@@ -452,23 +430,38 @@ td {
   box-shadow: 0px 0px 7px 3px  rgb(165, 156, 255);
 }
 
-#dadJokeBox {
-  width: 85%;
+.projA, .progA1 {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.projBox {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   box-shadow: -5px 10px 20px black;
   margin:20px 0px 30px 0px;
 
 }
 
-#titleDad {
-  margin-top: 20px;
-  font-family: 'Krona One';
+.projTitle {
+  margin: 20px 0px 20px 0px;
+  font-family: 'Kanit';
   font-size: calc(20px + 5 * ((100vw - 300px)/1300));
   display: inline-block;
   color: white;
   text-align: center;
+}
 
+.projP {
+  font-size: calc(15px + 5 * ((100vw - 300px)/1300));
+  color:white;
+  font-family: 'Kanit';
+  text-align: center;
+  margin: 10px 10px 20px 10px;
 }
 
 #dadJoke {
@@ -483,7 +476,9 @@ td {
   width: 50%;
   padding-top:40px;
   padding-bottom: 30px;
-  margin: 20px;
+  margin: 20px 0px 40px 0px;
+  text-decoration: none;
+  text-align: center;
   font-variant: small-caps;
   font-family: 'Krona One';
   font-size: calc(20px + 5 * ((100vw - 300px)/1300));
@@ -493,17 +488,6 @@ td {
   color: white;
 }
 
-#jokeDisplay {
-  display: none;
-  color: white;
-  font-size: calc(20px + 10 * ((100vw - 300px)/1300));
-  text-align: center;
-  margin: 20px;
-  padding: 30px;
-  background-color: rgb(8 3 54);
-  background: radial-gradient(circle at 90%, #232323, #14213d 40%, #0c284d 50%, #232323 95%);
-  box-shadow: -5px 10px 20px black;
-}
 
 footer {
   padding: 20px;
