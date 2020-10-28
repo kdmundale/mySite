@@ -9,9 +9,10 @@ var inst = setInterval(change, 2000);
 
 function change() {
 
+  elem.style.opacity = 0;
   elem.innerHTML = text[counter];
   unfade(elem);
-  fade(elem);
+  // fade(elem);
   counter++;
   if (counter >= text.length) {
     counter = 0;
@@ -34,7 +35,7 @@ function fade(element) {
     }, 50);
 }
 function unfade(element) {
-    var op = 0.1;  // initial opacity
+    var op = 0.01;  // initial opacity
     element.style.display = 'block';
     var timer = setInterval(function () {
         if (op >= 1){
@@ -43,5 +44,5 @@ function unfade(element) {
         element.style.opacity = op;
         element.style.filter = 'alpha(opacity=' + op * 100 + ")";
         op += op * 0.1;
-    }, 50);
+    }, 20);
 }
