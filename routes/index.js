@@ -16,4 +16,9 @@ router.get('/photography', (req, res) => {
   res.render('pages/photography');
 });
 
+router.get('/work_history', (req, res) => {
+  console.log('Request for work_history page recieved');
+  res.render('pages/work_history');
+});
+
 module.exports = router
