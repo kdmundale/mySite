@@ -1,4 +1,5 @@
 // Load Node modules
+process.env.NODE_ENV
 const express = require('express');
 const path = require('path');
 const routes = require('./routes');
@@ -11,5 +12,8 @@ app.use(express.static(__dirname + "/public"));
 app.set('view engine', 'ejs');
 
 app.use("/", routes);
+
 // Port website will run on
 app.listen(8080);
+
+module.export = app;

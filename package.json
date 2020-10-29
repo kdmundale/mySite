@@ -1,21 +1,31 @@
 {
-  "name": "mysite",
+  "name": "mySite",
   "version": "1.0.0",
-  "description": "",
+  "description": "Converted my profile page into a node.js app with express and EJS",
   "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "test": "mocha",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kdmundale/mySite.git"
+  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "bugs": {
+    "url": "https://github.com/kdmundale/mySite/issues"
+  },
+  "homepage": "https://github.com/kdmundale/mySite#readme",
+  "devDependencies": {
     "chai": "^4.2.0",
-    "chai-http": "^4.3.0",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "mocha": "^8.2.0",
-    "request": "^2.88.2",
     "supertest": "^6.0.0"
   }
 }
