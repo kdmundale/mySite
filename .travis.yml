@@ -4,4 +4,3 @@ node_js:
 deploy:
   provider: npm
   email: "kdmundale192@stevenscollege.edu"
-  api_key: f6fc9750-a740-4540-88d3-aef2f0f84c4e
