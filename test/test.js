@@ -5,13 +5,14 @@ const app = express();
 
 describe('GET /', function() {
   it('directs to home page', function(done) {
-    inst = request(app);
+    inst = request('http://localhost:8080');
     inst.get('/')
     .expect(200, function(err,res){
       if (err != null){
       console.log(err);
       }
       assert(res.text.includes('<title>KDMundale</title>'));
+      console.log(res);
       done();
     });
   });
